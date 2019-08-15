@@ -7,9 +7,9 @@ const AddedFeatures = props => {
   return (
     <div className="content">
       <h6>Added features:</h6>
-      {props.car.features.length ? (item, index) (
+      {props.car.features.length ? (
         <ol type="1">
-          {props.car.features.map(item => (
+          {props.car.features.map((item, index) => (
             <AddedFeature key={item.id} feature={item} index ={index} removeFeature={props.removeFeature} />
           ))}
         </ol>
@@ -17,6 +17,6 @@ const AddedFeatures = props => {
         <p>You can purchase items from the store.</p>
       )}
     </div>
-  )}
+)}
 
 export default AddedFeatures;
